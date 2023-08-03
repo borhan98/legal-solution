@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solution</title>
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts Poppins & EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind custom Colors -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'title': '#414040',
+                'descrip': '#707070',
+                'main-color': '#B68C5A',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Custom css style class -->
+      <style>
+        .poppins {
+          font-family: 'Poppins', sans-serif;
+        }
+        .garamond {
+          font-family: 'EB Garamond', serif;
+        }
+      </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="px-1 lg:px-0 py-12">
+      <nav class="container mx-auto">
+        <div class="navbar py-12">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <a class="poppins text-base text-descrip capitalize">home</a>
+                </li>
+                <li>
+                  <a class="poppins text-base text-descrip capitalize">services <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </li>
+                <li>
+                  <a class="poppins text-base text-descrip capitalize">Cases <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </li>
+                <li>
+                  <a class="poppins text-base text-descrip capitalize">blog <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </li>
+                <li>
+                  <a class="poppins text-base text-descrip capitalize">contact us <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </li>
+              </ul>
+            </div>
+            <a class="text-2xl md:text-4xl text-title font-extrabold garamond">Justice</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="poppins text-base text-descrip capitalize">home</a>
+              </li>
+              <li>
+                <a class="poppins text-base text-descrip capitalize">services <ion-icon name="chevron-forward-outline"></ion-icon></a>
+              </li>
+              <li>
+                <a class="poppins text-base text-descrip capitalize">Cases <ion-icon name="chevron-forward-outline"></ion-icon></a>
+              </li>
+              <li>
+                <a class="poppins text-base text-descrip capitalize">blog <ion-icon name="chevron-forward-outline"></ion-icon></a>
+              </li>
+              <li>
+                <a class="poppins text-base text-descrip capitalize">contact us <ion-icon name="chevron-forward-outline"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="py-2 md:py-4 px-2 md:px-7 text-sm md:text-base rounded-lg text-white bg-main-color">Free Consultation</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <div class="container mx-auto">
+        <div class="hero min-h-screen" style="background-image: url('./assets/images/banner.png')">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl">
+              <h1 class="text-3xl md:text-4xl lg:text-7xl garamond text-white font-extrabold">We Provide Effective Legal Solutions</h1>
+              <p class="poppins text-sm md:text-base text-[#E7E7E7] mt-6 mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="flex gap-6 flex-col md:flex-row items-center">
+                <input class="p-2 md:p-5 focus:outline-none bg-white rounded-lg w-9/12 placeholder:text-[#A0A0A0] text-[#A0A0A0] placeholder:poppins placeholder:text-base" type="search" name="search" id="" placeholder="Search your services">
+                <button class="py-2 md:py-5 rounded-lg text-white bg-main-color w-4/12 md:w-3/12">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- The Legal Practice Area -->
+      <section class="px-1 lg:px-0 py-12">
+        <div class="container mx-auto">
+          <div class="section_title text-center max-w-2xl mx-auto mb-16">
+            <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
+              The Legal Practice Area
+            </h3>
+            <p class="text-sm md:text-base poppins text-descrip">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- card 1 -->
+            <div class=" border-b bg-gradient-to-r hover:from-[#f3f3f35b] hover:to-[#F3F3F3]">
+              <figure class="flex justify-center px-10 pt-10">
+                <img src="./assets/images/business.png" alt="business" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-title garamond text-2xl md:text-3xl font-extrabold mb-4">
+                  Business Law
+                </h2>
+                <p class="text-sm md:text-base poppins text-descrip">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="card-actions">
+                  <button class="w-8 h-8 mt-8 rounded-full bg-main-color text-white">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class=" border-x border-b bg-gradient-to-r hover:from-[#f3f3f35b] hover:to-[#F3F3F3]">
+              <figure class="flex justify-center px-10 pt-10">
+                <img src="./assets/images/criminal.png" alt="business" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-title garamond text-2xl md:text-3xl font-extrabold mb-4">
+                  Criminal Law
+                </h2>
+                <p class="text-sm md:text-base poppins text-descrip">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="card-actions">
+                  <button class="w-8 h-8 mt-8 rounded-full bg-main-color text-white">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="border-b bg-gradient-to-r hover:from-[#f3f3f35b] hover:to-[#F3F3F3]">
+              <figure class="flex justify-center px-10 pt-10">
+                <img src="./assets/images/child.png" alt="business" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-title garamond text-2xl md:text-3xl font-extrabold mb-4">
+                  Child Support
+                </h2>
+                <p class="text-sm md:text-base poppins text-descrip">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="card-actions">
+                  <button class="w-8 h-8 mt-8 rounded-full bg-main-color text-white">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class=" md:border-l lg:border-l-0 md:border-b lg:border-b-0 bg-gradient-to-r hover:from-[#f3f3f35b] hover:to-[#F3F3F3]">
+              <figure class="flex justify-center px-10 pt-10">
+                <img src="./assets/images/education.png" alt="business" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-title garamond text-2xl md:text-3xl font-extrabold mb-4">
+                  Education Law
+                </h2>
+                <p class="text-sm md:text-base poppins text-descrip">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="card-actions">
+                  <button class="w-8 h-8 mt-8 rounded-full bg-main-color text-white">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="lg:border-x bg-gradient-to-r hover:from-[#f3f3f35b] hover:to-[#F3F3F3]">
+              <figure class="flex justify-center px-10 pt-10">
+                <img src="./assets/images/divorce.png" alt="business" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-title garamond text-2xl md:text-3xl font-extrabold mb-4">
+                  Divorce Law
+                </h2>
+                <p class="text-sm md:text-base poppins text-descrip">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="card-actions">
+                  <button class="w-8 h-8 mt-8 rounded-full bg-main-color text-white">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="md:border-l lg:border-l-0 bg-gradient-to-r hover:from-[#f3f3f35b] hover:to-[#F3F3F3]">
+              <figure class="flex justify-center px-10 pt-10">
+                <img src="./assets/images/tax.png" alt="business" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="text-title garamond text-2xl md:text-3xl font-extrabold mb-4">
+                  Tax Law
+                </h2>
+                <p class="text-sm md:text-base poppins text-descrip">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="card-actions">
+                  <button class="w-8 h-8 mt-8 rounded-full bg-main-color text-white">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- What Our Client Say -->
+      <section class="px-1 lg:px-0 py-12">
+        <div class="container mx-auto ">
+          <div class="section_title text-center max-w-2xl mx-auto mb-16">
+            <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
+              What Our Client Say
+            </h3>
+            <p class="text-sm md:text-base poppins text-descrip">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+          </div>
+          <div class="hero" style="background-image: url('./assets/images/banner.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="py-24">
+                <div class="carousel w-full">
+                  <!-- slide 1 -->
+                  <div id="slide1" class="carousel-item relative w-full ">
+                    <div class="max-w-3xl mx-auto">
+                      <figure class="flex justify-center mb-6">
+                        <img src="./assets/images/client.png" alt="">
+                      </figure>
+                      <h1 class="garamond text-2xl font-extrabold text-white mb-2">
+                        Awlad Hossain
+                      </h1>
+                      <small class="poppins text-white text-sm md:text-base">UIX Designer</small>
+                      <p class="text-sm md:text-base text-[#F3F3F3] poppins my-8">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                      </p>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide4" class="p-2 text-2xl">❮</a> 
+                      <a href="#slide2" class="p-2 text-2xl">❯</a>
+                    </div>
+                  </div> 
+                  <!-- slide 2 -->
+                  <div id="slide2" class="carousel-item relative w-full">
+                    <div class="max-w-3xl mx-auto">
+                      <figure class="flex justify-center mb-6">
+                        <img src="./assets/images/client.png" alt="">
+                      </figure>
+                      <h1 class="garamond text-2xl font-extrabold text-white mb-2">
+                        Awlad Hossain 2
+                      </h1>
+                      <small class="poppins text-white text-sm md:text-base">UIX Designer</small>
+                      <p class="text-sm md:text-base text-[#F3F3F3] poppins my-8">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                      </p>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide1" class="p-2 text-2xl">❮</a> 
+                      <a href="#slide3" class="p-2 text-2xl">❯</a>
+                    </div>
+                  </div>
+                  <!-- slide 3 -->
+                  <div id="slide3" class="carousel-item relative w-full">
+                    <div class="max-w-3xl mx-auto">
+                      <figure class="flex justify-center mb-6">
+                        <img src="./assets/images/client.png" alt="">
+                      </figure>
+                      <h1 class="garamond text-2xl font-extrabold text-white mb-2">
+                        Awlad Hossain 3
+                      </h1>
+                      <small class="poppins text-white text-sm md:text-base">UIX Designer</small>
+                      <p class="text-sm md:text-base text-[#F3F3F3] poppins my-8">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                      </p>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide2" class="p-2 text-2xl">❮</a> 
+                      <a href="#slide4" class="p-2 text-2xl">❯</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center w-full py-2 gap-2">
+                  <a href="#slide1" class="w-10 h-1 rounded-md bg-white "></a> 
+                  <a href="#slide2" class="w-10 h-1 rounded-md bg-white"></a> 
+                  <a href="#slide3" class="w-10 h-1 rounded-md bg-white"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="px-1 lg:px-0 py-12">
+        <div class="container mx-auto">
+          <div class="section_title text-center max-w-2xl mx-auto mb-16">
+            <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
+              Frequently Asked Any Questions
+            </h3>
+            <p class="text-sm md:text-base poppins text-descrip">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-8">
+            <div class="grid gap-7">
+              <!-- 1 -->
+              <div class="collapse collapse-plus bg-[#F3F3F3]">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title">
+                 <h3 class="garamond font-extrabold text-xl md:text-2xl text-title">
+                  1. Are application fee waivers available?
+                 </h3>
+                </div>
+                <div class="collapse-content"> 
+                  <p class="poppins text-descrip text-sm md:text-base">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="collapse collapse-plus bg-[#F3F3F3]">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title">
+                 <h3 class="garamond font-extrabold text-xl md:text-2xl text-title">
+                  1. Are application fee waivers available?
+                 </h3>
+                </div>
+                <div class="collapse-content"> 
+                  <p class="poppins text-descrip text-sm md:text-base">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="collapse collapse-plus bg-[#F3F3F3]">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title">
+                 <h3 class="garamond font-extrabold text-xl md:text-2xl text-title">
+                  1. Are application fee waivers available?
+                 </h3>
+                </div>
+                <div class="collapse-content"> 
+                  <p class="poppins text-descrip text-sm md:text-base">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="collapse collapse-plus bg-[#F3F3F3]">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title">
+                 <h3 class="garamond font-extrabold text-xl md:text-2xl text-title">
+                  1. Are application fee waivers available?
+                 </h3>
+                </div>
+                <div class="collapse-content"> 
+                  <p class="poppins text-descrip text-sm md:text-base">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <figure>
+                <img class="md:min-w-[550px] mx-auto" src="./assets/images/faq.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact us -->
+      <section class="px-1 lg:px-0 py-12">
+        <div class="container mx-auto">
+          <div class="section_title text-center max-w-2xl mx-auto mb-16">
+            <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
+              Contact With Us
+            </h3>
+            <p class="text-sm md:text-base poppins text-descrip">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-2">
+              <!-- 1 -->
+              <div class="bg-[#F3F3F3] text-center p-1 md:p-4 lg:p-14 border-r border-b space-y-4">
+                <img src="./assets/images/location.png" alt="Icon" class="mx-auto">
+                <h3 class="garamond text-title font-extrabold text-xl md:text-2xl">
+                  Address
+                </h3>
+                <p class="poppins text-descrip text-sm md:text-base">
+                  A108 Adam Street,
+                  <br>
+                  New York, NY 535022
+                </p>
+              </div>
+              <!-- 2 -->
+              <div class="bg-[#F3F3F3] text-center p-1 md:p-4 lg:p-14 border-b space-y-4">
+                <img src="./assets/images/call.png" alt="Icon" class="mx-auto">
+                <h3 class="garamond text-title font-extrabold text-xl md:text-2xl">
+                  Call Us
+                </h3>
+                <p class="poppins text-descrip text-sm md:text-base">
+                  +88 01750 00 00 00
+                  <br>
+                  +88 01750 00 00 00
+                </p>
+              </div>
+              <!-- 3 -->
+              <div class="bg-[#F3F3F3] text-center p-1 md:p-4 lg:p-14 border-r space-y-4">
+                <img src="./assets/images/email.png" alt="Icon" class="mx-auto">
+                <h3 class="garamond text-title font-extrabold text-xl md:text-2xl">
+                  Email Us
+                </h3>
+                <p class="poppins text-descrip text-sm md:text-base">
+                  info@gmail.com
+                  <br>
+                  info@gmail.com
+                </p>
+              </div>
+              <!-- 4 -->
+              <div class="bg-[#F3F3F3] text-center p-1 md:p-4 lg:p-14 space-y-4">
+                <img src="./assets/images/time.png" alt="Icon" class="mx-auto">
+                <h3 class="garamond text-title font-extrabold text-xl md:text-2xl">
+                  Working Hours
+                </h3>
+                <p class="poppins text-descrip text-sm md:text-base">
+                  Mon-Fri: 9AM to 5PM
+                  <br>
+                  Sunday: 9AM to 1 PM
+                </p>
+              </div>
+            </div>
+            <div>
+              <form action="#">
+                <label for="name">
+                   <input class="poppins mb-2 md:mb-4 lg:mb-7 text-sm md:text-base text-descrip focus:outline-none p-5 w-full bg-[#F3F3F3] rounded-lg" type="text" id="name" placeholder="Your name">
+                </label>
+                <label for="email">
+                   <input class="poppins mb-2 md:mb-4 lg:mb-7 text-sm md:text-base text-descrip focus:outline-none p-5 w-full bg-[#F3F3F3] rounded-lg" type="email" name="email" id="email" placeholder="Your email">
+                </label>
+                <label for="subject">
+                   <input class="poppins mb-2 md:mb-4 lg:mb-7 text-sm md:text-base text-descrip focus:outline-none p-5 w-full bg-[#F3F3F3] rounded-lg" type="text" id="subject" placeholder="Subject">
+                </label>
+                <label for="message">
+                   <textarea class="poppins mb-2 md:mb-4 lg:mb-7 text-sm md:text-base text-descrip focus:outline-none p-5 w-full bg-[#F3F3F3] rounded-lg" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                </label>
+                <label for="send">
+                  <button class="py-2 md:py-4 px-2 md:px-7 text-sm md:text-base rounded-lg text-white bg-main-color w-full capitalize" type="submit">send message</button>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
