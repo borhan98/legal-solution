@@ -38,9 +38,9 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header class="px-1 lg:px-0 py-12">
+    <header class="px-1 xl::px-0 py-4 md:py-8 lg:py-12">
       <nav class="container mx-auto">
-        <div class="navbar py-12">
+        <div class="navbar py-4 md:py-8 lg:py-12">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -109,7 +109,7 @@
     </header>
     <main>
       <!-- The Legal Practice Area -->
-      <section class="px-1 lg:px-0 py-12">
+      <section class="px-1 xl:px-0 py-12">
         <div class="container mx-auto">
           <div class="section_title text-center max-w-2xl mx-auto mb-16">
             <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
@@ -238,7 +238,7 @@
         </div>
       </section>
       <!-- What Our Client Say -->
-      <section class="px-1 lg:px-0 py-12">
+      <section class="px-1 xl:px-0 py-12">
         <div class="container mx-auto ">
           <div class="section_title text-center max-w-2xl mx-auto mb-16">
             <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
@@ -322,7 +322,7 @@
         </div>
       </section>
       <!-- FAQ -->
-      <section class="px-1 lg:px-0 py-12">
+      <section class="px-1 xl:px-0 py-12">
         <div class="container mx-auto">
           <div class="section_title text-center max-w-2xl mx-auto mb-16">
             <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
@@ -400,7 +400,7 @@
         </div>
       </section>
       <!-- Contact us -->
-      <section class="px-1 lg:px-0 py-12">
+      <section class="px-1 xl:px-0 py-12">
         <div class="container mx-auto">
           <div class="section_title text-center max-w-2xl mx-auto mb-16">
             <h3 class="text-2xl md:text-4xl text-title font-extrabold mb-6 garamond">
@@ -484,7 +484,69 @@
         </div>
       </section>
     </main>
-
+    <!-- Footer section -->
+    <footer class="px-1 xl:px-0 py-4 md:py-8 lg:py-28 bg-title">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-6 gap-4 lg:gap-10">
+          <div>
+            <div class="mb-8">
+              <img src="./assets/images/logo.png" alt="">
+            </div>
+            <p class="poppins text-sm md:text-base text-[#CFCFCF]">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+          </div>
+          <div>
+            <h3 class="garamond text-xl md:text-2xl font-extrabold text-[#FFFFFF] mt-3 lg:mt-0 mb-7 lg:mb-11">
+              Usefull Link
+            </h3>
+            <ul class="space-y-4">
+              <li><a class="poppins text-sm md:text-base text-[#CFCFCF] capitalize" href="#">Home</a></li>
+              <li><a class="poppins text-sm md:text-base text-[#CFCFCF] capitalize" href="#">about us</a></li>
+              <li><a class="poppins text-sm md:text-base text-[#CFCFCF] capitalize" href="#">cases</a></li>
+              <li><a class="poppins text-sm md:text-base text-[#CFCFCF] capitalize" href="#">blog</a></li>
+              <li><a class="poppins text-sm md:text-base text-[#CFCFCF] capitalize" href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="garamond text-xl md:text-2xl font-extrabold text-[#FFFFFF] mb-7 lg:mb-11">
+              Contact Now
+            </h3>
+            <div class="space-y-5">
+              <p class="poppins text-sm md:text-base text-[#CFCFCF]">
+                555 4th 5t NW, Washington
+                <br>
+                DC 20530, United States
+              </p>
+              <p class="poppins text-sm md:text-base text-[#CFCFCF]">
+                +88 01750 000 000
+                <br>
+                +88 01750 000 000
+              </p>
+              <p class="poppins text-sm md:text-base text-[#CFCFCF]">
+                info@gmail.com
+                <br>
+                info@gmail.com
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="garamond text-xl md:text-2xl font-extrabold text-[#FFFFFF] mb-7 lg:mb-11">
+              Subscribe
+            </h3>
+            <p class="poppins text-sm md:text-base text-[#CFCFCF] mb-4">
+              Subscribe for our latest & Articles. We Won’t Give You Spam Mails
+            </p>
+            <label class="flex items-baseline gap-1" for="email">
+              <input class="poppins mb-2 md:mb-4 lg:mb-7 text-sm md:text-base text-descrip focus:outline-none p-2 md:p-5 w-full bg-[#F3F3F3] rounded-lg" type="email" name="email" placeholder="Email Address">
+              <button class="h-full p-2 md:p-5 text-sm md:text-base rounded-lg text-white bg-main-color" type="submit">
+                <ion-icon name="send-outline" class="-rotate-45"></ion-icon>
+              </button>
+            </label>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
